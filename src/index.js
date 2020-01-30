@@ -1,5 +1,5 @@
 const { registerBlockType } = wp.blocks;
-
+var el = wp.element.createElement;
 registerBlockType( 'gutenberg-block/test-block', {
     title: 'Custom block',
     icon: 'admin-users',
@@ -24,9 +24,10 @@ registerBlockType( 'gutenberg-block/test-block', {
         );
     },
     save: function(props) {
-        return wp.element.createElement(
+        return el(
             "h3",
-            props.attributes.title
+            { className: 'title' },
+            props.attributes.title,
         );
     }
 });
