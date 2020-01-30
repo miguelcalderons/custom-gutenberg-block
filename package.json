@@ -1,0 +1,15 @@
+{
+  "name": "gutenberg-block",
+  "version": "1.0.0",
+  "description": "Gutenberg custom block",
+  "main": "scripts/index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "author": "Miguel Calderon",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "6.2.0"
+  }
+}
